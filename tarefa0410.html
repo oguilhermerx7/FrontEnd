@@ -10,22 +10,23 @@
             flex-direction: column;
             align-items: center;
             font-family: Arial, sans-serif;
+            background-color: aliceblue;
         }
-
+        
         div {
             margin: 20px;
         }
-
+        
         button {
             padding: 10px 20px;
-            background-color: #3498db;
+            background-color: #032c47;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
+        
         a {
             text-decoration: none;
         }
@@ -33,6 +34,7 @@
 </head>
 
 <body>
+    <H1> Aqui temos os botões animados!</H1>
     <div>
         <a href='https://www.google.com/chrome/'><button id="botao1" onmouseover="entrar1()"
                 onmouseout="sair1()">Acesse agora este link para fazer o Download do Navegador mais utilizado no
@@ -81,7 +83,7 @@
 
         function sair3() {
             var s = window.document.getElementById('botao3');
-            s.innerText = 'Acesse este link para realizar o download do jogo Valorant, um dos jogos de FPS mais jogados no mundo inteiro!';
+            s.innerText = 'Acesse esse link para realizar o Download do Jogo de FPS Valorant, um dos jogos mais jogados atualmente no mundo inteiro!';
             s.style.backgroundColor = 'grey';
         }
     </script>
