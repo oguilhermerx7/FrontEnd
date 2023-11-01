@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ATIVIDADE AVALIATIVA 3TRI</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <div class="div-main">
+        <section>
+            <main>
+                <header>
+                    <div class="h1">
+                        <h1>Informe seu gênero, sua idade e verifique.</h1>
+                    </div>
+                </header>
+                <div class="header">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="nome">
+                    </div>
+                    <br>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Idade</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" id="idade">
+                    </div>
+                    <br>
+                    <div class="generos">
+                        <input type="radio" id="masculino" name="genero">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="feminino" name="genero">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <br>
+                    <button onclick="enviar()" type="button" class="btn btn-secondary btn-sm">Verificar!</button>
+                </div>
+            </main>
+        </section>
+    </div>
+    <div class="resposta">
+        <p id="resposta"></p>
+        <img id="resposta-imagem" src="" alt="Imagem da sua resposta!">
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
