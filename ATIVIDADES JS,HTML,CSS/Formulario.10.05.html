@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Externo - Formulário1 13/04, 03/05</title>
+    <link rel="stylsheet" href="style.css">
+</head>
+<body>
+    <header> <!--CABEÇALHO-->
+
+    </header>
+    <main> <!--MEIO-->
+        <section class="box">
+            <form>
+                <fieldset>
+                    <legend><strong>Formulário de Clientes</strong></legend>
+                    <br>
+                    <section class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required placeholder="silvio santos">
+                        <label for="nome" class="labelinput">Nome Completo</label>
+                    </section>
+                    <br><br>
+                    <section class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required placeholder="seuemail@dominio.com">
+                        <label for="email" class="labelinput">Email</label>
+                    </section>
+                    <br><br>
+                    <section class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required placeholder="(XX)XXXXX-XXXX">
+                        <label for="telefone" class="labelinput">Telefone</label>
+                    </section>
+                    <br><br>
+                    </legend>
+                </fieldset>
+            </form>
+        </section>
+        
+        <p>SEXO</p>
+        <input type="radio" name="feminino" name="genero" value="feminino" class="inputUser" required>
+        <label for="feminino">FEMININO</label>
+        <br>
+        <input type="radio" name="masculino" name="genero" value="masculino"  class="inputUser" required>
+        <label for="masculino">MASCULINO</label>
+        <br>
+        <input type="radio" name="outro" name="genero" value="outro" class="inputUser" required>
+        <label for="outro">OUTRO</label>
+        <br><br>
+        <label for="data_nascimento"><strong>ANO DE NASCIMENTO</strong></label> <br>
+        <input type="date" class="inputUser" name="data_nascimento" id="data_nascimento" required>
+        <br><br><br>
+
+        <section>
+            <input type="text" name="cidade" id="cidade" class="inputUser" required>
+            <label for="cidade">CIDADE</label>
+        </section>
+        <br>
+        
+        <section>
+            <input type="text" name="estado" id="estado" class="inputUser" required>
+            <label for="estado">ESTADO</label>
+        </section>
+        <br>
+        <section>
+            <input type="text" name="endereco" id="endereco" class="inputUser" required>
+            <label for="endereco">ENDEREÇO</label>
+        </section>
+        <br><br>
+        <input type="submit" value="Enviar Formulário" id="enviar">
+
+    </fieldset>
+
+    </main>
+    <footer> <!--RODAPÉ-->
+
+
+    </footer>
+</body>
+</html>

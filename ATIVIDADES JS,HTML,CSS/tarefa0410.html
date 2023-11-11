@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefa 04 10</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+        }
+        
+        div {
+            margin: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #032c47;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <H1> Aqui temos os botões animados!</H1>
+    <div>
+        <a href='https://www.google.com/chrome/'><button id="botao1" onmouseover="entrar1()"
+                onmouseout="sair1()">Acesse agora este link para fazer o Download do Navegador mais utilizado no
+                mundo</button></a>
+    </div>
+    <div>
+        <a href='https://www.twitch.tv'><button id="botao2" onmouseover="entrar2()" onmouseout="sair2()">Acesse este
+                link para assistir as melhores Transmissões ao vivo do mundo inteiro!</button></a>
+    </div>
+    <div>
+        <a href='https://playvalorant.com/pt-br/?gad=1&gclid=Cj0KCQjwmvSoBhDOARIsAK6aV7gUh4RTZbCIicTHE--8O37xA59KJkR0dKaA3ijXvxvWfFVElEdj-SQaAi31EALw_wcB&gclsrc=aw.ds'><button id="botao3" onmouseover="entrar3()" onmouseout="sair3()">
+                Acesse este link para realizar o download do
+                jogo Valorant, um dos jogos de FPS mais jogados no mundo inteiro!</button></a>
+    </div>
+
+    <script>
+        function entrar1() {
+            var e = window.document.getElementById('botao1');
+            e.innerText = 'GOOGLE CHROME';
+            e.style.backgroundColor = 'blue';
+        }
+
+        function sair1() {
+            var s = window.document.getElementById('botao1');
+            s.innerText = 'Acesse agora este link para fazer o Download do Navegador mais utilizado no mundo';
+            s.style.backgroundColor = 'grey';
+        }
+
+        function entrar2() {
+            var e = window.document.getElementById('botao2');
+            e.innerText = 'TWITCH';
+            e.style.backgroundColor = 'purple';
+        }
+
+        function sair2() {
+            var s = window.document.getElementById('botao2');
+            s.innerText = 'Acesse este link para assistir as melhores Transmissões ao vivo do mundo inteiro!';
+            s.style.backgroundColor = 'grey';
+        }
+
+        function entrar3() {
+            var e = window.document.getElementById('botao3');
+            e.innerText = 'VALORANT';
+            e.style.backgroundColor = 'red';
+        }
+
+        function sair3() {
+            var s = window.document.getElementById('botao3');
+            s.innerText = 'Acesse esse link para realizar o Download do Jogo de FPS Valorant, um dos jogos mais jogados atualmente no mundo inteiro!';
+            s.style.backgroundColor = 'grey';
+        }
+    </script>
+</body>
+
+</html>
